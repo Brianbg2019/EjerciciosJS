@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio ocho</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Columna 1</th>
+                <th>Columna 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Contenido</td>
+                <td>Contenido</td>
+            </tr>
+            <tr>
+                <td>Contenido</td>
+                <td>Contenido</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
+    
+    <script>
+        $(document).ready(inicio);
+        function inicio(){
+            $("td").mouseover(efecto);
+            $("td").mouseout(efectonull);
+        }
+        function efecto(){
+            $(this).css("background-color","red")
+        };
+        function efectonull(){
+            $(this).css("background-color","white");
+        }
+    </script>
+</body>
+</html>

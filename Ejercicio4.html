@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio cuatro</title>
+</head>
+<div class="noticia1">
+    <h1>Noticia 1</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatibus atque labore enim veniam consequuntur
+        iste ut beatae nulla accusantium, quos necessitatibus excepturi, quo numquam sequi ad modi cupiditate culpa.</p>
+    <button id="btn1">Rescatar</button>
+</div>
+<div class="noticia2">
+    <h1>Noticia 2</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatibus atque labore enim veniam consequuntur
+        iste ut beatae nulla accusantium, quos necessitatibus excepturi, quo numquam sequi ad modi cupiditate culpa.</p>
+    <button id="btn2">Rescatar</button>
+</div>
+<div class="noticia3">
+    <h1>Noticia 3</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatibus atque labore enim veniam consequuntur
+        iste ut beatae nulla accusantium, quos necessitatibus excepturi, quo numquam sequi ad modi cupiditate culpa.</p>
+    <button id="btn3">Rescatar</button>
+</div>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(inicio);
+        function inicio(){
+            $("#btn1").click(function(){
+                $(".noticia1").css("font-size","20px");
+            });
+            $("#btn2").click(function(){
+                $(".noticia2").css("font-size","25px");
+            });
+            $("#btn3").click(function(){
+                $(".noticia3").css("font-size","30px");
+            });
+               
+          
+        }
+    </script>
+</body>
+
+</html>

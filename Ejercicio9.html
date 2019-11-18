@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio nueve</title>
+</head>
+<body>
+    <div id="cambiar" style="background-color: gray; border: 1px black solid; height: 500px; width: 100px;">
+        <h2>Doble click para cambiar tamaño</h2>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(inicio);
+        function inicio(){
+            var big = "big";
+            $("#cambiar").dblclick(function(){
+                if(big=="big"){
+                    $("#cambiar").css("width","250px");
+                    $("#cambiar").css("height","250px");
+                    big="smal";
+                }else{
+                    $("#cambiar").css("width","100px");
+                    $("#cambiar").css("height","500px");
+                    big="big";
+                }
+            });
+        }
+    </script>
+</body>
+</html>

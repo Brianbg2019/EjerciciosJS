@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio diez</title>
+    <style>
+        .recuadro {
+            background-color: gray;
+            font-family: verdana;
+            font-size: 14px;
+
+            border-top-width: 1px;
+            border-right-width: 3px;
+            border-bottom-width: 3px;
+            border-left-width: 1px;
+
+            border-top-style: dotted;
+            border-right-style: solid;
+            border-bottom-style: solid;
+            border-left-style: dotted;
+
+           
+        }
+
+        #descripcion2 {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parrafos1" class="recuadro">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus pariatur fuga repellat atque eveniet
+            impedit tenetur mollitia nihil doloribus asperiores fugit labore, deserunt exercitationem saepe ratione.
+            Temporibus sed reiciendis eius?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vero quo optio deleniti nostrum sed culpa
+            quis quas odio obcaecati nesciunt, sint reiciendis possimus cum quod maiores rerum aliquid commodi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quaerat rerum accusantium quasi natus!
+            Porro architecto consequuntur itaque eius animi a ab natus earum suscipit. Consequuntur pariatur
+            perspiciatis error similique.</p>
+    </div>
+    <div id="parrafos2" class="recuadro">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus pariatur fuga repellat atque eveniet
+            impedit tenetur mollitia nihil doloribus asperiores fugit labore, deserunt exercitationem saepe ratione.
+            Temporibus sed reiciendis eius?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vero quo optio deleniti nostrum sed culpa
+            quis quas odio obcaecati nesciunt, sint reiciendis possimus cum quod maiores rerum aliquid commodi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quaerat rerum accusantium quasi natus!
+            Porro architecto consequuntur itaque eius animi a ab natus earum suscipit. Consequuntur pariatur
+            perspiciatis error similique.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(inicio);
+
+        function inicio(){
+            $("#parrafos1").click(function(){
+                $("#parrafos1").hide("slow",mostrar);
+            });
+        }
+
+        function mostrar(){
+            $("#parrafos2").show("slow");
+        }
+    </script>    
+</body>
+
+</html>

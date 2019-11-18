@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio siete</title>
+    <style>
+        .cabecera{
+            font-family:arial;
+            font-weight: normal;
+            background-color: blue;
+            color:#ffffff;
+        }
+        .cuerpo{
+            border: 1px solid black;
+            padding: .5em;
+            background-color:gray;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Contenido</th>
+                <th>Botones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Contenido 1</td>
+                <td><button id="thead">Asociar</button></td>
+            </tr>
+            <tr>
+                <td>Contenido 2</td>
+                <td><button id="tbody">Desasosiar</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(inicio);
+        function inicio(){
+            $("#thead").click(function(){
+                $("th").addClass("cabecera");
+                $("td").addClass("cuerpo");
+            });
+
+            $("#tbody").click(function(){
+                $("th").removeClass("cabecera");
+                $("td").removeClass("cuerpo");
+            });
+        }
+    </script>
+</body>
+</html>

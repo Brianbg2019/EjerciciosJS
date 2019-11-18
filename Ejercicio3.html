@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio tres</title>
+</head>
+
+<body>
+    <!--Mostrar dos tablas y al dar click a sus filas cambien de color-->
+    <table border="1" id="t1">
+        <thead>
+            <tr>
+                <th>Filas de tabla uno</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td >Elemento 1</td>
+            </tr>
+            <tr>
+                <td>Elemento 2</td>
+            </tr>
+            <tr>
+                <td>Elemento 3</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Filas de tabla dos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Elemento 4</td>
+            </tr>
+            <tr>
+                <td>Elemento 5</td>
+            </tr>
+            <tr>
+                <td>Elemento 6</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(inicio);
+
+        function inicio(){
+            var x = $("#t1 tbody tr")
+            x.click(function(){
+                $(this).css(
+                    "background-color","green",
+                );
+            });
+        }
+    </script>
+</body>
+
+</html>

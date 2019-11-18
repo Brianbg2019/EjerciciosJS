@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio seis</title>
+</head>
+
+<body>
+    <h1>Botones para ver el html de la pagina en alertas</h1>
+    <button id="btn1">Mostrar cabecera de la pagina</button>
+    <button id="btn2">Mostrar contenido de la pagina</button>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(inicio);
+        function inicio(){
+            $("#btn1").click(function(){
+                alert($("head").html());
+            });
+            $("#btn2").click(function(){
+                alert($("body").html());
+            });
+        }
+    </script>    
+</body>
+
+</html>
